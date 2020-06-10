@@ -14,6 +14,17 @@ button {
   font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.about {
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+
+.about a {
+  color: whitesmoke;
+}
+
 .userinput {
   display: -ms-grid;
   display: grid;
