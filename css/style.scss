@@ -25,6 +25,33 @@ button {
   }
 }
 
+.markdown-toolbox-cheatsheet {
+  visibility: visible;
+  color: white;
+  background-color: rgb(66, 66, 66);
+  position: fixed;
+  left: 29%;
+  top: 33.5%;
+
+  p, h4 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.cheatsheet-hover:hover .markdown-toolbox-cheatsheet {
+  visibility: hidden;
+}
+
+.cheatsheet-hover {
+  display: inline-block;
+}
+
 .userinput {
   display: grid;
   flex-direction: column;

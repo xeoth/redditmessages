@@ -25,6 +25,33 @@ button {
   color: whitesmoke;
 }
 
+.markdown-toolbox-cheatsheet {
+  visibility: visible;
+  color: white;
+  background-color: #424242;
+  position: fixed;
+  left: 29%;
+  top: 33.5%;
+}
+
+.markdown-toolbox-cheatsheet p, .markdown-toolbox-cheatsheet h4 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+}
+
+.markdown-toolbox-cheatsheet a {
+  color: white;
+}
+
+.cheatsheet-hover:hover .markdown-toolbox-cheatsheet {
+  visibility: hidden;
+}
+
+.cheatsheet-hover {
+  display: inline-block;
+}
+
 .userinput {
   display: -ms-grid;
   display: grid;

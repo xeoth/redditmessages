@@ -22,6 +22,38 @@
     <a href="https://reddit.com/u/xeoth">Author</a> | <a href="https://github.com/xeoth/redditmessages">Code</a>
   </div>
 
+  <div class="markdown-toolbox-cheatsheet">
+    <table>
+      <tr>
+        <th>Markdown Cheatsheet</th>
+        <th>Toolbox' Placeholders Cheatsheet</th>
+      </tr>
+      <tr>
+        <td>
+          <p>*text* = <i>text</i></p>
+          <p>**text** = <strong>text</strong></p>
+          <p>***text*** = <i><strong>text</strong></i></p>
+          <p>`text` = <code>text</code></p>
+          <p>~~text~~ = <strike>text</strike>
+          </p>
+          <p>See full guide over at <a href="https://reddit.com/wiki/markdown">Reddit's wiki page</a>.</p>
+        </td>
+        <td>
+          <p>{subreddit} = Your Subreddit's name (without r/)</p>
+          <p>{author} = OP's username (without u/)</p>
+          <p>{kind} = submission/comment</p>
+          <p>{mod} = Moderator's username (without u/)</p>
+          <p>{title} = Post's title</p>
+          <p>{url} = permalink of the post/comment</p>
+          <p>See the full guide over at <a href="https://reddit.com/r/toolbox/wiki/docs/removalreasons">Toolbox' Wiki
+              page</a></p>
+        </td>
+      </tr>
+    </table>
+    <h4>Markdown cheatsheet</h4>
+
+  </div>
+
   <div class="userinput">
     <label>
       To<br />
@@ -33,7 +65,7 @@
       <input type="text" name="subject" id="subject-text-box" required />
     </label>
     <label>
-      Message<br />
+      Message <span class="cheatsheet-hover">[ cheat sheet ]</span><br />
       <textarea name="message" id="message-textarea" cols="55" rows="10" required></textarea>
     </label>
   </div>
