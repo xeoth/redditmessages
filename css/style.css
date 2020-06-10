@@ -25,13 +25,24 @@ button {
   color: whitesmoke;
 }
 
+.quote {
+  border-left: 3px solid #8e959c;
+  padding-left: 3px;
+}
+
 .markdown-toolbox-cheatsheet {
-  visibility: visible;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   color: white;
   background-color: #424242;
   position: fixed;
-  left: 29%;
-  top: 33.5%;
+  left: 0%;
+  top: 0;
+  padding-bottom: 100%;
+  padding-top: 10%;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .markdown-toolbox-cheatsheet p, .markdown-toolbox-cheatsheet h4 {
@@ -44,12 +55,12 @@ button {
   color: white;
 }
 
-.cheatsheet-hover:hover .markdown-toolbox-cheatsheet {
-  visibility: hidden;
-}
-
-.cheatsheet-hover {
-  display: inline-block;
+.cheatsheet-button {
+  border: none;
+  background-color: transparent;
+  color: #dddddd;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
 }
 
 .userinput {

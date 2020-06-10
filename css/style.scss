@@ -25,13 +25,25 @@ button {
   }
 }
 
+
+.quote {
+  border-left: 3px solid rgb(142, 149, 156);
+  padding-left: 3px;
+}
+
 .markdown-toolbox-cheatsheet {
-  visibility: visible;
+  opacity: 0;
+  transition: 0.3s;
+
   color: white;
   background-color: rgb(66, 66, 66);
   position: fixed;
-  left: 29%;
-  top: 33.5%;
+  left: 0%;
+  top: 0;
+  padding-bottom: 100%;
+  padding-top: 10%;
+  padding-right: 5px;
+  padding-left: 5px;
 
   p, h4 {
     margin-top: 2px;
@@ -44,12 +56,12 @@ button {
   }
 }
 
-.cheatsheet-hover:hover .markdown-toolbox-cheatsheet {
-  visibility: hidden;
-}
-
-.cheatsheet-hover {
-  display: inline-block;
+.cheatsheet-button {
+  border: none;
+  background-color: transparent;
+  color: rgb(221, 221, 221);
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
 }
 
 .userinput {
