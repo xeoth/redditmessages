@@ -7,7 +7,3 @@ function generate() {
 
   $('#result').val(fullURL);
 }
-
-function copy() {
-
-}
