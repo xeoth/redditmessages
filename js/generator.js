@@ -3,7 +3,7 @@ function generate() {
   const subject = $('#subject-text-box').val();
   const message = $('#message-textarea').val();
 
-  let fullURL = `https://reddit.com/message/compose?to=${recipient}&subject=${encodeURI(subject)}&message=${encodeURI(message)}`;
+  let fullURL = `https://reddit.com/message/compose?to=${recipient}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
 
   $('#result').val(fullURL);
 }
