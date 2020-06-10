@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
 body {
   background-color: rgb(49, 49, 49);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
   text-align: center;
   color: white;
+  font-weight: bold;
 }
 
-form {
-  display: flex;
+button {
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.userinput {
+  display: grid;
   flex-direction: column;
 
-  align-items: center;
+  justify-content: center;
 
   label {
     color: white;
@@ -22,11 +29,13 @@ form {
     padding: 5px 5px 5px 5px;
     margin-bottom: 10px;
     
-    width: 450px;
+    width: 98%;
   }
+
   textarea {
     padding: 5px 5px 5px 5px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
   }
 
 }
@@ -39,7 +48,7 @@ form {
     background-color: rgb(73, 238, 73);
     border: none;
     font-size: 2em;
-  }
+}
   
   button:hover {
     background-color: rgb(100, 241, 100);
@@ -50,17 +59,35 @@ form {
   }
 }
 
+.results-container {
+  display: grid;
+  // flex-direction: column;
+  // align-items: center;
+  justify-items: center;
+}
+
 #result {
   margin-top: 40px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 5px 5px 5px 5px;
+  width: 20%;
 }
 
 .copy-button {
-    background-color: rgb(255, 238, 0);
-    border: none;
-    border-radius: 2px;
-    padding: 5px 5px 5px 5px;
-    font-size: 1.2em;
+  background-color: rgb(255, 238, 0);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 5px 5px 5px;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+  
+.copy-button:hover {
+    background-color: rgb(252, 241, 93);
+}
+  
+.copy-button:active {
+  background-color: rgb(223, 209, 25);
 }
