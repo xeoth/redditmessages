@@ -40,9 +40,15 @@ button {
 
 }
 
+.incomplete-fields-warning {
+  visibility: hidden;
+  color: red;
+  text-align: center;
+}
+
 .generate-button {
   button {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 20px 10px 20px;
     border-radius: 2px;
     background-color: rgb(73, 238, 73);

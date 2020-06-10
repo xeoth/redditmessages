@@ -1,9 +1,18 @@
 function generate() {
-  const recipient = $('#recipient-text-box').val();
-  const subject = $('#subject-text-box').val();
-  const message = $('#message-textarea').val();
+  const recipient = $('#recipient-text-box');
+  const subject = $('#subject-text-box');
+  const message = $('#message-textarea');
 
-  let fullURL = `https://reddit.com/message/compose?to=${recipient}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
+  if (!recipient.val() || !subject.val() || !message.val()) {
+    $('.incomplete-fields-warning').css('visibility', 'visible');
+    [recipient, subject, message].forEach(el => el.val() ? {} : el.css('border', '2px solid red'));
+    return;
+  } else {
+    [recipient, subject, message].forEach(el => el.val() ? el.css('border', 'none') : {});
+    $('.incomplete-fields-warning').css('visibility', 'hidden');
+  }
+
+  let fullURL = `https://reddit.com/message/compose?to=${recipient.val()}&subject=${encodeURIComponent(subject.val())}&message=${encodeURIComponent(message.val())}`;
 
   $('#result').val(fullURL);
 }
