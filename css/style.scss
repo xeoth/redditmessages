@@ -51,14 +51,14 @@ button {
 }
 
 .incomplete-fields-warning {
-  visibility: hidden;
+  display: none;
   color: red;
   text-align: center;
 }
 
 .generate-button {
   button {
-    margin-top: 0px;
+    margin-top: 5px;
     padding: 10px 20px 10px 20px;
     border-radius: 2px;
     background-color: rgb(73, 238, 73);
