@@ -33,12 +33,17 @@
       <div class="form-group">
         <label for="content">Message Content</label>
         <textarea required class="form-control" id="messageContent"></textarea>
-        <small class="text-muted"><a href="https://www.reddit.com/wiki/markdown">Markdown Cheatsheet</a> <a href="https://www.reddit.com/r/toolbox/wiki/docs/removalreasons#wiki_tokens">Toolbox Cheatsheet</a></small>
+        <small class="text-muted cheatsheets"><a href="https://www.reddit.com/wiki/markdown">Markdown Cheat Sheet</a> <a href="https://www.reddit.com/r/toolbox/wiki/docs/removalreasons#wiki_tokens">Toolbox Cheat Sheet</a></small>
       </div>
 
       <button class="btn btn-primary" id="generate-btn" type="button"> <img src="./icons/gear-fill.svg" alt="gear icon"> Generate</button>
       <button class="btn btn-danger" id="clear-btn" type="button"> <img src="./icons/trash2-fill.svg" alt=""> Clear all</button>
     </form>
+
+    <div class="results" id="results">
+      <h3>Results</h3>
+      <pre id="results-field">Your link will appear here once you hit "Generate"!</pre>
+    </div>
   </div>
 </body>
 

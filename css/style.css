@@ -5,4 +5,18 @@ body {
 .app {
   margin-top: 3em;
 }
+
+.cheatsheets a {
+  margin-right: 0.3em;
+}
+
+.results h3 {
+  margin-top: 1em;
+}
+
+.results pre {
+  background-color: #dddddd;
+  padding: 0.5em;
+  border-radius: 2px;
+}
 /*# sourceMappingURL=style.css.map */

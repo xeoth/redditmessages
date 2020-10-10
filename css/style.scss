@@ -3,8 +3,21 @@ body {
 }
 
 .app {
-
   margin-top: 3em;
-  // display: grid;
-  // place-items: center;
+}
+
+.cheatsheets a {
+  margin-right: 0.3em;
+}
+
+.results {
+  h3 {
+    margin-top: 1em;
+  }
+
+  pre {
+    background-color: rgb(221, 221, 221);
+    padding: 0.5em;
+    border-radius: 2px;
+  }
 }
