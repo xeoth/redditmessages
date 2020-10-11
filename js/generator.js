@@ -7,7 +7,7 @@ $('#generate-btn').click(() => {
 
   let fullURL = `https://reddit.com/message/compose?to=${recipient}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
 
-  $('#results-field').text(fullURL);
+  $('#results-field').text(fullURL.replace(/%7B/g, '{').replace(/%7D/g, '}'));
 })
 
 $('#clear-btn').click(() => {
