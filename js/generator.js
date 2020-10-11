@@ -1,7 +1,7 @@
 $('#generate-btn').click(() => {
-  const recipient = $('#recipientInput').val();
-  const subject = $('#titleInput').val();
-  const message = $('#messageContent').val();
+  const recipient = $('#recipient-input').val();
+  const subject = $('#title-input').val();
+  const message = $('#message-content').val();
 
   if (!recipient || !subject || !message) return;
 
@@ -11,7 +11,9 @@ $('#generate-btn').click(() => {
 })
 
 $('#clear-btn').click(() => {
-  $('#recipientInput').val('');
-  $('#titleInput').val('');
-  $('#messageContent').val('');
+  $('#recipient-input').val('');
+  $('#title-input').val('');
+  $('#message-content').val('');
+
+  $('#results-field').text('Your link will appear here once you hit "Generate"!');
 })

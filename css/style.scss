@@ -6,13 +6,25 @@ body {
   margin-top: 3em;
 }
 
+#toolbox-collapse tbody td:first-child {
+  font-family: 'Courier New', Courier, monospace;
+  color: #e83e8c;
+  font-weight: 500;
+}
+
 .cheatsheets a {
   margin-right: 0.3em;
 }
 
+.quote {
+  border-left: 2px solid rgb(161, 161, 161);
+  padding-left: 0.3em;
+}
+
 .results {
-  h3 {
-    margin-top: 1em;
+  h2 {
+    margin-top: 0.8em;
+    font-size: 1.75em;
   }
 
   pre {
