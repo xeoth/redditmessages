@@ -38,101 +38,103 @@
         <label for="message-content">Message Content</label>
         <textarea required class="form-control" id="message-content"></textarea>
 
-        <small class="text-muted cheatsheets">
+        <small class="text-muted cheatsheet-buttons">
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#markdown-collapse" aria-expanded="false" aria-controls="markdown-collapse">Markdown Cheat Sheet</a>
           
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#toolbox-collapse" aria-expanded="false" aria-controls="toolbox-collapse">Toolbox Cheat Sheet</a>
         </small>
 
-        <div class="collapse" id="markdown-collapse">
-          <div class="card card-body">
-            <table class="table table-sm table-striped">
-              <thead>
-                <th scope="col">What you write</th>
-                <th scope="col">What the user sees</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>*text*</td>
-                  <td><i>text</i></td>
-                </tr>
-                <tr>
-                  <td>**text**</td>
-                  <td><strong>text</strong></td>
-                </tr>
-                <tr>
-                  <td>`text`</td>
-                  <td><code>text</code></td>
-                </tr>
-                <tr>
-                  <td>~~text~~</td>
-                  <td><strike>text</strike></td>
-                </tr>
-                <tr>
-                  <td>>text</td>
-                  <td><span class="quote">text</span></td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="https://reddit.com/wiki/markdown" target="_blank" rel="noreferrer">See the full help page</a>
+        <div class="cheatsheets">
+          <div class="collapse cheatsheets" id="markdown-collapse">
+            <div class="card card-body">
+              <table class="table table-sm table-striped">
+                <thead>
+                  <th scope="col">What you write</th>
+                  <th scope="col">What the user sees</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>*text*</td>
+                    <td><i>text</i></td>
+                  </tr>
+                  <tr>
+                    <td>**text**</td>
+                    <td><strong>text</strong></td>
+                  </tr>
+                  <tr>
+                    <td>`text`</td>
+                    <td><code>text</code></td>
+                  </tr>
+                  <tr>
+                    <td>~~text~~</td>
+                    <td><strike>text</strike></td>
+                  </tr>
+                  <tr>
+                    <td>>text</td>
+                    <td><span class="quote">text</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="https://reddit.com/wiki/markdown" target="_blank" rel="noreferrer">See the full help page</a>
+            </div>
           </div>
-        </div>
 
-        <div class="collapse" id="toolbox-collapse">
-          <div class="card card-body">
-            <table class="table table-sm table-striped">
-              <thead>
-                <th scope="col">What you write</th>
-                <th scope="col">Description</th>
-                <th scope="col">Example</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>{subreddit}</td>
-                  <td>Your subreddit name (without the r/)</td>
-                  <td>polls</td>
-                </tr>
-                <tr>
-                  <td>{author}</td>
-                  <td>OP's username (without the u/)</td>
-                  <td>Xeoth</td>
-                </tr>
-                <tr>
-                  <td>{kind}</td>
-                  <td>The type of actioned content - either 'submission' or 'comment'</td>
-                  <td>comment</td>
-                </tr>
-                <tr>
-                  <td>{mod}</td>
-                  <td>Moderator's username (without the u/)</td>
-                  <td>alteoth</td>
-                </tr>
-                <tr>
-                  <td>{title}</td>
-                  <td>Submission's title</td>
-                  <td>The Entire Bee Movie Script Writen In Ancient Hindi</td>
-                </tr>
-                <tr>
-                  <td>{link}</td>
-                  <td>The permalink to actioned content</td>
-                  <td>https://www.reddit.com/r/ImaginaryTechnology/comments/fh25x3/the_forest/</td>
-                </tr>
-              </tbody>
-            </table>
-            <a href="https://www.reddit.com/r/toolbox/wiki/docs/removalreasons#wiki_tokens" target="_blank" rel="noreferrer">See the full help page</a>
+          <div class="collapse" id="toolbox-collapse">
+            <div class="card card-body">
+              <table class="table table-sm table-striped">
+                <thead>
+                  <th scope="col">What you write</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{subreddit}</td>
+                    <td>Your subreddit name (without the r/)</td>
+                    <td>polls</td>
+                  </tr>
+                  <tr>
+                    <td>{author}</td>
+                    <td>OP's username (without the u/)</td>
+                    <td>Xeoth</td>
+                  </tr>
+                  <tr>
+                    <td>{kind}</td>
+                    <td>The type of actioned content - either 'submission' or 'comment'</td>
+                    <td>comment</td>
+                  </tr>
+                  <tr>
+                    <td>{mod}</td>
+                    <td>Moderator's username (without the u/)</td>
+                    <td>alteoth</td>
+                  </tr>
+                  <tr>
+                    <td>{title}</td>
+                    <td>Submission's title</td>
+                    <td>The Entire Bee Movie Script Writen In Ancient Hindi</td>
+                  </tr>
+                  <tr>
+                    <td>{link}</td>
+                    <td>The permalink to actioned content</td>
+                    <td>https://www.reddit.com/r/ImaginaryTechnology/comments/fh25x3/the_forest/</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="https://www.reddit.com/r/toolbox/wiki/docs/removalreasons#wiki_tokens" target="_blank" rel="noreferrer">See the full help page</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <button class="btn btn-primary" id="generate-btn" type="button"> <img src="./icons/gear-fill.svg" alt="gear icon"> Generate</button>
-      <button class="btn btn-danger" id="clear-btn" type="button"> <img src="./icons/trash2-fill.svg" alt="Trash icon"> Clear all</button>
+      <button class="btn btn-primary" id="generate-btn" type="button"> <img src="./icons/gear-fill.svg" alt="gear icon" class="icon"> Generate</button>
+      <button class="btn btn-danger" id="clear-btn" type="button"> <img src="./icons/trash2-fill.svg" alt="Trash icon" class="icon"> Clear all</button>
     </form>
 
     <div class="results" id="results">
       <h2>Results</h2>
       <pre id="results-field">Your link will appear here once you hit "Generate"!</pre>
       <button class="btn btn-outline-secondary" id="copy-btn" type="button" data-clipboard-target="#results-field">
-        <img src="./icons/clipboard.svg" alt="clipboard icon">
+        <img src="./icons/clipboard.svg" alt="clipboard icon" class="icon">
         Copy
       </button>
     </div>

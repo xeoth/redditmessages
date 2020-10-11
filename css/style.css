@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 body {
   background-color: #f7f7f7;
 }
@@ -6,19 +7,22 @@ body {
   margin-top: 3em;
 }
 
-#toolbox-collapse tbody td:first-child {
-  font-family: 'Courier New', Courier, monospace;
-  color: #e83e8c;
-  font-weight: 500;
+.app .icon {
+  margin-bottom: 0.2em;
 }
 
-.cheatsheets a {
+.cheatsheet-buttons a {
   margin-right: 0.3em;
 }
 
-.quote {
+.cheatsheets .quote {
   border-left: 2px solid #a1a1a1;
   padding-left: 0.3em;
+}
+
+.cheatsheets #toolbox-collapse tbody td:first-child {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  color: #e83e8c;
 }
 
 .results h2 {

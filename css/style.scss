@@ -1,25 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+
+$font-family-sans-serif:
+  // Safari for macOS and iOS (San Francisco)
+  -apple-system,
+  // Chrome < 56 for macOS (San Francisco)
+  BlinkMacSystemFont,
+  // Default besides mac
+  Roboto,
+  // Windows
+  "Segoe UI",
+  // Basic web fallback
+  "Helvetica Neue", Arial,
+  // Linux
+  "Noto Sans",
+  // Sans serif fallback
+  sans-serif,
+  // Emoji fonts
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
 body {
   background-color:rgb(247, 247, 247);
 }
 
 .app {
   margin-top: 3em;
+  
+  .icon {
+    margin-bottom: 0.2em;
+  }
 }
 
-#toolbox-collapse tbody td:first-child {
-  font-family: 'Courier New', Courier, monospace;
-  color: #e83e8c;
-  font-weight: 500;
+.cheatsheet-buttons a {
+    margin-right: 0.3em;
 }
 
-.cheatsheets a {
-  margin-right: 0.3em;
+.cheatsheets {
+  .quote {
+    border-left: 2px solid rgb(161, 161, 161);
+    padding-left: 0.3em;
+  }
+
+  #toolbox-collapse tbody td:first-child {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    color: #e83e8c;
+  }
 }
 
-.quote {
-  border-left: 2px solid rgb(161, 161, 161);
-  padding-left: 0.3em;
-}
+
 
 .results {
   h2 {
