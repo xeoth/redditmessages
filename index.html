@@ -19,16 +19,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
 
-  <script src="js/generator.js"></script>
-  <script src="js/clipboard.js"></script>
+  <script src="js/generator.js" defer></script>
+  <script src="js/clipboard.js" defer></script>
 
   <div class="container app">
     <h1>Reddit Message Generator</h1>
     <form>
       <div class="form-group">
         <label for="recipient-input">Message Recipient</label>
-        <small class="text-muted">/r/subreddit for that subreddit's moderators</small>
         <input required type="text" class="form-control" id="recipient-input" />
+        <small class="form-text text-muted">/r/subreddit for that subreddit's moderators</small>
       </div>
       <div class="form-group">
         <label for="title-input">Message Title</label>
