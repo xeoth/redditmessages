@@ -1,12 +1,13 @@
-const clipboard = new ClipboardJS('.copy-button');
+const clipboard = new ClipboardJS('#copy-btn');
 
-clipboard.on('success', function (e) {
-  $('.button-text').html('Copied!');
-  setTimeout(function () {
-    $('.button-text').html('Copy');
+clipboard.on('success', e => {
+  const $copyButton = $('#copy-btn');
+
+  $copyButton.removeClass('btn-outline-primary').addClass('btn-outline-success');
+  $copyButton.html('Copied!');
+
+  setTimeout(() => {
+    $copyButton.removeClass('btn-outline-success').addClass('btn-outline-primary');
+    $copyButton.html('<img src="./icons/clipboard.svg" alt="clipboard icon"> Copy');
   }, 1000);
-});
-
-clipboard.on('error', function (e) {
-  console.error(e);
-});
+})

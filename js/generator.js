@@ -1,18 +1,19 @@
-function generate() {
-  const recipient = $('#recipient-text-box');
-  const subject = $('#subject-text-box');
-  const message = $('#message-textarea');
+$('#generate-btn').click(() => {
+  const recipient = $('#recipient-input').val();
+  const subject = $('#title-input').val();
+  const message = $('#message-content').val();
 
-  if (!recipient.val() || !subject.val() || !message.val()) {
-    $('.incomplete-fields-warning').css('display', 'block');
-    [recipient, subject, message].forEach(el => el.val() ? {} : el.css('border', '2px solid red'));
-    return;
-  } else {
-    [recipient, subject, message].forEach(el => el.val() ? el.css('border', 'none') : {});
-    $('.incomplete-fields-warning').css('display', 'none');
-  }
+  if (!recipient || !subject || !message) return;
 
-  let fullURL = `https://reddit.com/message/compose?to=${recipient.val()}&subject=${encodeURIComponent(subject.val())}&message=${encodeURIComponent(message.val())}`;
+  let fullURL = `https://reddit.com/message/compose?to=${recipient}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`;
 
-  $('#result').val(fullURL);
-}
+  $('#results-field').text(fullURL);
+})
+
+$('#clear-btn').click(() => {
+  $('#recipient-input').val('');
+  $('#title-input').val('');
+  $('#message-content').val('');
+
+  $('#results-field').text('Your link will appear here once you hit "Generate"!');
+})

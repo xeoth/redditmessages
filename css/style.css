@@ -1,148 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 body {
-  background-color: #313131;
-  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f8f8 !important;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-  font-weight: bold;
+main {
+  margin-top: 3em;
 }
 
-button {
-  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+main .icon {
+  margin-bottom: 0.2em;
 }
 
-.about {
-  text-align: center;
-  margin-top: -10px;
-  margin-bottom: 5px;
-  color: whitesmoke;
+.cheatsheet-buttons a {
+  margin-right: 0.3em;
 }
 
-.about a {
-  color: whitesmoke;
+.cheatsheets .quote {
+  border-left: 2px solid #a1a1a1;
+  padding-left: 0.3em;
 }
 
-.quote {
-  border-left: 3px solid #8e959c;
-  padding-left: 3px;
+.cheatsheets #toolbox-collapse tbody td:first-child {
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  color: #e83e8c;
 }
 
-.markdown-toolbox-cheatsheet {
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  color: white;
-  background-color: #424242;
-  position: fixed;
-  left: 0%;
-  top: 0;
-  padding-bottom: 100%;
-  padding-top: 10%;
-  padding-right: 5px;
-  padding-left: 5px;
+.results h2 {
+  margin-top: 0.8em;
+  font-size: 1.75em;
 }
 
-.markdown-toolbox-cheatsheet p, .markdown-toolbox-cheatsheet h4 {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  margin-left: 5px;
-}
-
-.markdown-toolbox-cheatsheet a {
-  color: white;
-}
-
-.cheatsheet-button {
-  border: none;
-  background-color: transparent;
-  color: #dddddd;
-  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: underline;
-}
-
-.userinput {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.userinput label {
-  color: white;
-}
-
-.userinput input {
-  padding: 5px 5px 5px 5px;
-  margin-bottom: 10px;
-  width: 98%;
-}
-
-.userinput textarea {
-  padding: 5px 5px 5px 5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  resize: none;
-}
-
-.incomplete-fields-warning {
-  display: none;
-  color: red;
-  text-align: center;
-}
-
-.generate-button button {
-  margin-top: 5px;
-  padding: 10px 20px 10px 20px;
+.results pre {
+  background-color: #dddddd;
+  padding: 0.5em;
   border-radius: 2px;
-  background-color: #49ee49;
-  border: none;
-  font-size: 2em;
 }
 
-.generate-button button:hover {
-  background-color: #64f164;
-}
-
-.generate-button button:active {
-  background-color: #2ec92e;
-}
-
-.results-container {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-}
-
-#result {
-  margin-top: 40px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px 5px 5px 5px;
-  width: 20%;
-}
-
-.copy-button {
-  background-color: #ffee00;
-  border: none;
-  border-radius: 2px;
-  padding: 5px 5px 5px 5px;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-.copy-button:hover {
-  background-color: #fcf15d;
-}
-
-.copy-button:active {
-  background-color: #dfd119;
+footer {
+  background-color: #f0f0f0;
 }
 /*# sourceMappingURL=style.css.map */
