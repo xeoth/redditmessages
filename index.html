@@ -7,9 +7,6 @@
   <link rel="shortcut icon" href="favicon.ico?v=4" type="image/x-icon">
   <meta name="description" content="A tool to help create prefilled message links for Reddit.">
   
-  <!-- <script src="https://kit.fontawesome.com/b43abeb35a.js" crossorigin="anonymous"></script> -->
-  <script src="js/generator.js" defer></script>
-  <script src="js/clipboard.js"></script>
   <link rel="stylesheet" href="css/style.css" />
   <title>Reddit Message Link Generator</title>
 </head>
@@ -20,7 +17,10 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+
+  <script src="js/generator.js"></script>
+  <script src="js/clipboard.js"></script>
 
   <div class="container app">
     <h1>Reddit Message Generator</h1>
@@ -125,13 +125,13 @@
       </div>
 
       <button class="btn btn-primary" id="generate-btn" type="button"> <img src="./icons/gear-fill.svg" alt="gear icon"> Generate</button>
-      <button class="btn btn-danger" id="clear-btn" type="button"> <img src="./icons/trash2-fill.svg" alt=""> Clear all</button>
+      <button class="btn btn-danger" id="clear-btn" type="button"> <img src="./icons/trash2-fill.svg" alt="Trash icon"> Clear all</button>
     </form>
 
     <div class="results" id="results">
       <h2>Results</h2>
       <pre id="results-field">Your link will appear here once you hit "Generate"!</pre>
-      <button class="btn btn-outline-secondary" id="copy-btn" type="button">
+      <button class="btn btn-outline-secondary" id="copy-btn" type="button" data-clipboard-target="#results-field">
         <img src="./icons/clipboard.svg" alt="clipboard icon">
         Copy
       </button>
