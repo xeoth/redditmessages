@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap");
 body {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8 !important;
 }
 
-.app {
+main {
   margin-top: 3em;
 }
 
-.app .icon {
+main .icon {
   margin-bottom: 0.2em;
 }
 
@@ -34,5 +34,9 @@ body {
   background-color: #dddddd;
   padding: 0.5em;
   border-radius: 2px;
+}
+
+footer {
+  background-color: #f0f0f0;
 }
 /*# sourceMappingURL=style.css.map */
