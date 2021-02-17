@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Roboto&famil/sy=Roboto+Mono&display=swap");
 
 $font-family-sans-serif:
   // Safari for macOS and iOS (San Francisco)
@@ -10,28 +10,30 @@ $font-family-sans-serif:
   // Windows
   "Segoe UI",
   // Basic web fallback
-  "Helvetica Neue", Arial,
+  "Helvetica Neue",
+  Arial,
   // Linux
   "Noto Sans",
   // Sans serif fallback
   sans-serif,
   // Emoji fonts
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+  "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 body {
-  background-color:rgb(248, 248, 248) !important;
+  background-color: rgb(248, 248, 248) !important;
 }
 
 main {
   margin-top: 3em;
-  
+
   .icon {
     margin-bottom: 0.2em;
   }
 }
 
 .cheatsheet-buttons a {
-    margin-right: 0.3em;
+  margin-right: 0.3em;
 }
 
 .cheatsheets {
@@ -40,8 +42,9 @@ main {
     padding-left: 0.3em;
   }
 
-  #toolbox-collapse tbody td:first-child {
-    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  #toolbox-collapse tbody td:first-child,
+  #automod-collapse tbody td:first-child {
+    font-family: "Courier New", Courier, monospace;
     color: #e83e8c;
   }
 }
@@ -58,7 +61,6 @@ main {
     border-radius: 2px;
   }
 }
-
 
 footer {
   background-color: rgb(240, 240, 240);

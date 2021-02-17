@@ -43,6 +43,8 @@
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#markdown-collapse" aria-expanded="false" aria-controls="markdown-collapse">Markdown Cheat Sheet</a>
           
           <a href="javascript:void(0);" data-toggle="collapse" data-target="#toolbox-collapse" aria-expanded="false" aria-controls="toolbox-collapse">Toolbox Cheat Sheet</a>
+
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#automod-collapse" aria-expanded="false" aria-controls="automod-collapse">Automoderator Cheat Sheet</a>
         </small>
 
         <div class="cheatsheets">
@@ -90,38 +92,83 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>{subreddit}</td>
-                    <td>Your subreddit name (without the r/)</td>
-                    <td>polls</td>
+                    <td>{author}</td>
+                    <td>The author's name</td>
+                    <td>Xeelee1123</td>
                   </tr>
                   <tr>
-                    <td>{author}</td>
-                    <td>OP's username (without the u/)</td>
-                    <td>Xeoth</td>
+                    <td>{title}</td>
+                    <td>The submission's title</td>
+                    <td>Mega Skyhook design by Jullius Granada</td>
+                  </tr>
+                  <tr>
+                    <td>{link}</td>
+                    <td>The permalink to the actioned content</td>
+                    <td>https://reddit.com/r/ImaginaryTechnology/comments/lhhkzv/mega_skyhook_design_by_jullius_granada/</td>
+                  </tr>
+                  <tr>
+                    <td>{subreddit}</td>
+                    <td>Your subreddit name (without the r/)</td>
+                    <td>ImaginaryTechnology</td>
                   </tr>
                   <tr>
                     <td>{kind}</td>
-                    <td>The type of actioned content - either 'submission' or 'comment'</td>
-                    <td>comment</td>
+                    <td>Either "submission" or "comment"</td>
+                    <td>submission</td>
                   </tr>
                   <tr>
                     <td>{mod}</td>
                     <td>Moderator's username (without the u/)</td>
                     <td>alteoth</td>
                   </tr>
-                  <tr>
-                    <td>{title}</td>
-                    <td>Submission's title</td>
-                    <td>The Entire Bee Movie Script Writen In Ancient Hindi</td>
-                  </tr>
-                  <tr>
-                    <td>{link}</td>
-                    <td>The permalink to actioned content</td>
-                    <td>https://www.reddit.com/r/ImaginaryTechnology/comments/fh25x3/the_forest/</td>
-                  </tr>
                 </tbody>
               </table>
               <a href="https://www.reddit.com/r/toolbox/wiki/docs/removalreasons#wiki_tokens" target="_blank" rel="noreferrer">See the full help page</a>
+            </div>
+          </div>
+
+          <div class="collapse" id="automod-collapse">
+            <div class="card card-body">
+              <table class="table table-sm table-striped">
+                <thead>
+                  <th scope="col">What you write</th>
+                  <th scope="col">Description</th>
+                  <th scope="col">Example</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{author}}</td>
+                    <td>The author's name</td>
+                    <td>Xeelee1123</td>
+                  </tr>
+                  <tr>
+                    <td>{{title}}</td>
+                    <td>The submission's title</td>
+                    <td>Aegis Hammer Head Promo by Sarah MCculloch</td>
+                  </tr>
+                  <tr>
+                    <td>{{body}}</td>
+                    <td>The full body of the text submission or comment</td>
+                    <td>I really like when their glasses have that suspicious looking gleam, and it's amazing how it can look really cool or just be a joke. I really like how it can fulfill all those abstract needs. Being able to switch up the styles and colors of glasses based on your mood is a lot of fun too!</td>
+                  </tr>
+                  <tr>
+                    <td>{{subreddit}}</td>
+                    <td>Subreddit name</td>
+                    <td>ImaginaryStarships</td>
+                  </tr>
+                  <tr>
+                    <td>{{kind}}</td>
+                    <td>Either "submission" or "comment"</td>
+                    <td>submission</td>
+                  </tr>
+                  <tr>
+                    <td>{{permalink}}</td>
+                    <td>The permalink to the actioned content</td>
+                    <td>https://reddit.com/r/ImaginaryStarships/comments/jv0jvm/aegis_hammer_head_promo_by_sarah_mcculloch/</td>
+                  </tr>
+                </tbody>
+              </table>
+              <a href="https://www.reddit.com/wiki/automoderator/full-documentation#wiki_placeholders" target="_blank" rel="noreferrer">See the full help page</a>
             </div>
           </div>
         </div>
